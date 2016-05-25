@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--分隔条View样式-->
+    <style name="width_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/black_transparent_20</item>
+    </style>
+
+    <!--Menu栏返回ImageView样式-->
+    <style name="menu_back">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:src">@drawable/left_or_back</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/setting_img_shape</item>
+    </style>
+
+    <!--Menu栏Title样式-->
+    <style name="menu_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text_blue</item>
+    </style>
+
+    <!--Menu栏控制文本样式-->
+    <style name="menu_text">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_blue</item>
+        <item name="android:background">@drawable/setting_img_shape</item>
+    </style>
+
+    <!--Setting系列界面功能TextView样式-->
+    <style name="setting_text_item">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:enabled">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--Setting系列界面介绍功能TextView样式-->
+    <style name="setting_introduce_text_item">
+        <item name="android:textColor">@color/gray_black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:enabled">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <!--Setting系列界面EditText样式-->
+    <style name="setting_edit_item">
+        <item name="android:background">@drawable/input_text</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--Setting系列界面CheckBox样式-->
+    <style name="setting_check_box">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:clickable">false</item>
+        <item name="android:button">@drawable/check_box_shape</item>
+    </style>
+
+    <!--Setting系列界面RadioButton样式、RadioGroup样式-->
+    <style name="setting_radio_group">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="setting_radio_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_base</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

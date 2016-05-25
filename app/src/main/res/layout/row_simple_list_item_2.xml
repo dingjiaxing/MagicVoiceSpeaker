@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:paddingTop="7dp"
+    android:paddingBottom="5dp"
+    android:layout_height="50dp">
+    <ImageView
+        android:id="@+id/simple_item_2"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:focusable="false"
+        android:src="@drawable/alarms_list_ic_delete"/>
+    <biz.home.assistActivity.MarqueeText
+        android:id="@+id/simple_item_1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/simple_item_2"
+        android:textColor="@color/speakToit_bg"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:text="测试文本"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:id="@+id/simple_item_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible"/>
+</RelativeLayout>

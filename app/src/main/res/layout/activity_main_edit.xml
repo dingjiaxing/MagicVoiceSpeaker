@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!--<TextView-->
+    <!--android:id="@+id/speak_top_show_bg"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="80dp"-->
+    <!--android:background="@color/speakToit_bg"-->
+    <!--android:layout_marginTop="320dp"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/speak_top_show"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_marginTop="320dp"-->
+    <!--android:background="@color/speakToit_bg"-->
+    <!--android:gravity="center"-->
+    <!--android:singleLine="false"-->
+    <!--android:text="@string/good_morning"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:scrollbars="vertical"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/assist_text"-->
+    <!--android:height="80dp"-->
+    <!--android:background="#00000000"-->
+    <!--android:layout_marginTop="320dp"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <!--秘书说话的文字 后面的背景-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:background="@color/speakToit_bg"-->
+        <!--android:layout_above="@+id/edit_linear_button"/>-->
+    <LinearLayout
+        android:id="@+id/main_edit_exit_scene_liner"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_above="@+id/edit_linear_button"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/main_edit_exit_scene_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:padding="3dp"
+            android:src="@drawable/exit_scene_icon"/>
+        <TextView
+            android:id="@+id/main_edit_exit_scene_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出该场景"
+            android:textSize="15dp"
+            android:textColor="@color/exit_scene_color"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/speak_top_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/main_edit_exit_scene_liner"
+        android:layout_marginBottom="15dp"
+        android:gravity="bottom|center_horizontal"
+        android:singleLine="false"
+        android:text="@string/good_morning"
+        android:textColor="@color/white"
+        android:scrollbars="vertical"
+        android:layout_centerVertical="true"/>
+
+    <!--标题-->
+    <TextView
+        android:id="@+id/agreement"
+        android:layout_above="@+id/speak_top_show"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/user_edit_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignBaseline="@+id/bottom_menu_bg"-->
+    <!--android:layout_below="@+id/speak_top_show"-->
+    <!--android:fitsSystemWindows="true">-->
+    <LinearLayout
+        android:id="@+id/edit_linear_button"
+        android:layout_above="@+id/user_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/button_deatil"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button_detail_2"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/button_detail_icon"
+
+            android:text="@string/button_detail"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button_next_2"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/button_next_icon"
+            android:layout_marginLeft="20dp"
+            android:text="@string/button_next"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/user_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:fitsSystemWindows="true">
+
+
+        <TextView
+            android:id="@+id/speak_center_show"
+            android:text="此处为用户所说的话"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/speak_bottom_show"
+            android:gravity="center"
+            android:textColor="@color/speakToit_bg"
+            android:textSize="22dp"
+            android:scrollbars="vertical"/>
+
+        <TextView
+            android:id="@+id/speak_bottom_show"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/speak_default_edit"
+            android:textColor="@color/text_color"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</RelativeLayout>

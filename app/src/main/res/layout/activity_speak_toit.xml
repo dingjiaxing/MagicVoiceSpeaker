@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_menu_bg"
+        android:fitsSystemWindows="true">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_page_vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:fitsSystemWindows="true"></android.support.v4.view.ViewPager>
+
+        <ImageView
+            android:id="@+id/assets_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="52dp"
+
+            android:clickable="true"
+            android:src="@drawable/iconfont_shezhi" />
+        <!--android:background="@drawable/iconfont_set"-->
+        <ImageView
+            android:id="@+id/assets_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/assets_setting"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+
+            android:clickable="true"
+            android:src="@drawable/iconfont_tubiaoyonghu" />
+        <!--android:background="@drawable/iconfont_set"-->
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bottom_menu_bg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:clickable="false" />
+
+    <RelativeLayout
+        android:id="@+id/main_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom">
+
+        <RelativeLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:fitsSystemWindows="true"
+            android:gravity="center">
+            <!--话筒的声波变化背景-->
+            <ImageView
+                android:id="@+id/menu_bottom_voice"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="-140dp"
+                android:background="@drawable/voice_shape"
+                android:clickable="false"
+                android:padding="30dp" />
+        </RelativeLayout>
+
+        <!--主界面 底部的含有 键盘按钮、话筒、设置的按钮的矩形条-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:fitsSystemWindows="true"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <!--键盘输入按钮-->
+            <ImageView
+                android:id="@+id/menu_bottom_keyboard"
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"
+                android:padding="15dp" />
+            <!--话筒图标-->
+            <ImageView
+                android:id="@+id/menu_bottom_microphone"
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:contentDescription="0"
+                android:padding="10dp" />
+            <!--系统设置按钮-->
+            <ImageView
+                android:id="@+id/menu_bottom_menu"
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:padding="15dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

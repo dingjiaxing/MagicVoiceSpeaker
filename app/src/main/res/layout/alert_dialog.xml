@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="230dp"
+    android:layout_height="180dp"
+    style="@style/AlertDialog.AppCompat"
+    android:id="@+id/content"
+
+    android:background="@drawable/alert_dialog_bg">
+    <LinearLayout
+        android:id="@+id/alert_dialog_linear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/aler_title_icon"/>
+        <TextView
+            android:id="@+id/alert_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="神奇小秘书提醒"
+            android:textColor="@color/speakToit_bg"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/alert_fenge"
+        android:layout_below="@+id/alert_dialog_linear"
+        android:layout_centerHorizontal="true"
+        android:layout_width="210dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/speakToit_bg"/>
+    <TextView
+        android:id="@+id/content2"
+        android:layout_below="@+id/alert_fenge"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:text="您叫我提醒您的！"
+        android:textColor="#515151"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/close_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:gravity="left|center_vertical"
+        android:text="关闭"
+        android:drawableLeft="@drawable/alert_dialog_button_icon"
+        android:background="@drawable/alert_dialog_button_bg"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

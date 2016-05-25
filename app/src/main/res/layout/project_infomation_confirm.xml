@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/project_edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/speakToit_bg">
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/project_message_name"
+        android:text="项目内容"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        />
+    <ScrollView
+        android:id="@+id/project_scrollView_message_content"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/speakToit_bg">
+        <EditText
+            android:id="@+id/project_message_content"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="left"
+            android:text="    此处为项目内容，当时是否是对方是飞洒发送方式发送是否撒发生地方萨芬啊发生地方撒旦法时代"
+            android:hint="点击以编辑"
+            android:textColor="@color/white"
+            android:singleLine="false"
+            android:inputType="textMultiLine"
+            android:autoLink="none"/>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/project_message_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBaseline="@+id/bottom_menu_bg"
+        android:layout_below="@+id/project_scrollView_message_content"
+        android:fitsSystemWindows="true">
+
+        <Button
+            android:id="@+id/project_insert_pic"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/button_next"
+            android:gravity="center"
+            android:text="插入图片"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/project_change_sure"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/project_message_response"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@color/button_detail"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/project_message_response"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/project_insert_pic"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/speakToit_bg"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/project_message_bottom_show"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/project_message_response"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_color"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

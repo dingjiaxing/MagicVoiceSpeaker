@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/speakToit_bg"
+    android:paddingTop="24dp"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@+id/bro_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/speakToit_bg"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:id="@+id/bro_go_down"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/bro_go_up"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:clickable="true"
+            android:background="@drawable/selector_brower_menu_n_01"/>
+
+        <ImageView
+            android:id="@+id/bro_go_up"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_toEndOf="@+id/bro_go_down"
+            android:layout_toRightOf="@+id/bro_go_down"
+            android:clickable="true"
+            android:background="@drawable/selector_brower_menu_n_02"/>
+        <ImageView
+            android:id="@+id/bro_return_main"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toEndOf="@+id/bro_go_down"
+            android:layout_toRightOf="@+id/bro_go_down"
+            android:layout_toLeftOf="@+id/bro_select_bro"
+            android:layout_marginLeft="80dp"
+            android:clickable="true"
+            android:src="@drawable/return_menu_icon"/>
+        <ImageView
+            android:id="@+id/bro_select_bro"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="91dp"
+            android:layout_marginRight="91dp"
+            android:clickable="true"
+            android:background="@drawable/selector_brower_menu_n_03"/>
+
+        <ImageView
+            android:id="@+id/bro_share"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp"
+            android:clickable="true"
+            android:background="@drawable/selector_brower_menu_n_04"/>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarStyleHorizontal"
+        android:layout_below="@+id/bro_bar"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:background="#ffffff"
+        android:secondaryProgress="70"
+        />
+<!-- style="?android:attr/progressBarStyleHorizontal" -->
+    <WebView
+        android:id="@+id/assets_main_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/progressBarStyleHorizontal"
+        android:layout_above="@+id/web_line_bottom"
+        android:layerType="software"
+        android:scrollbars="horizontal"/>
+
+    <!--该线性布局的高度有3档，分别是18dp、42dp、65dp-->
+    <LinearLayout
+        android:id="@+id/web_line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:fitsSystemWindows="true">
+
+            <ImageView
+                android:id="@+id/assets_web_direct"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:clickable="true"
+                android:longClickable="true"
+                android:onClick="true" />
+
+            <ImageView
+                android:id="@+id/assets_web_direct_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/web_direct" />
+        </RelativeLayout>
+
+        <biz.home.assistActivity.MarqueeText
+            android:id="@+id/assets_web_text_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/speak_default_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:textSize="18dp"
+            android:textColor="@color/white" />
+        <!--<TextView-->
+        <!--android:id="@+id/assets_web_text_show"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/speak_default_content"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/white" />-->
+        <TextView
+            android:id="@+id/web_click_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="点击以编辑"
+            android:textColor="@color/text_color"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/web_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text=""/>
+    </LinearLayout>
+
+
+
+
+    <!--
+        <TextView
+        android:id="@+id/assets_web_text_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/speak_default_content"
+        android:scrollHorizontally="true"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="@color/white" />
+    -->
+
+</RelativeLayout>

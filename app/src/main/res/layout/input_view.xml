@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2692b9"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/back_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="这里是回复消息"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:clickable="false"/>
+    <EditText
+        android:id="@+id/input_info"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:hint="@string/input_view_hint"
+        android:textColorHint="#DCDCDC"
+        android:textSize="20sp"/>
+</LinearLayout>

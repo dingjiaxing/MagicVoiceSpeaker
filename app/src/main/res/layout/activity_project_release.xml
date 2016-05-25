@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/project_release_linea1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="@color/speakToit_bg">
+        <ImageView
+            android:id="@+id/project_release_return"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/left_or_back"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/project_release_topTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="资源发布页面"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textSize="22dp"
+            />
+        <TextView
+            android:id="@+id/project_release_button"
+            android:text="发布"
+            android:textSize="18dp"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/project_release_progressBar"
+        android:layout_below="@+id/project_release_linea1"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:background="#ffffff"
+        android:secondaryProgress="0"
+        android:visibility="invisible"
+        />
+    <LinearLayout
+        android:id="@+id/project_release_linear2"
+        android:layout_below="@+id/project_release_linea1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText
+            android:id="@+id/project_release_title"
+            android:layout_width="match_parent"
+            android:hint="点击输入资源标题"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/project_release_linear3"
+        android:layout_below="@+id/project_release_linear2"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/project_release_bottom"
+        android:layout_height="700dp">
+        <EditText
+            android:id="@+id/project_release_content"
+            android:layout_width="match_parent"
+            android:hint="点击输入资源内容"
+            android:gravity="left|start"
+            android:scrollbars="vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/project_release_voice_help_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/project_release_bottom"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@color/grey_heavy">
+        <TextView
+            android:id="@+id/project_release_voice_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出错了"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/project_release_voice_button_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:text="说完了"/>
+            <Button
+                android:id="@+id/project_release_button_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:text="关闭"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/project_release_bottom"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:background="@color/grey_light"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/project_release_image_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/project_icon_image"
+            android:padding="5dp"/>
+        <ImageView
+            android:id="@+id/project_icon_camera_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/project_release_image_button"
+            android:src="@drawable/project_icon_camera"
+            android:padding="5dp"/>
+        <ImageView
+            android:id="@+id/project_icon_voice_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/project_icon_voice"
+            android:layout_toLeftOf="@+id/project_icon_ok_button"
+            android:layout_marginRight="30dp"
+            android:padding="5dp"/>
+        <ImageView
+            android:id="@+id/project_icon_ok_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/project_icon_ok"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:padding="5dp"/>
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

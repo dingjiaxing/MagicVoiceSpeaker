@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_white">
+        <ImageView
+            android:id="@+id/setting_share_back_img"
+            style="@style/menu_back"/>
+        <TextView
+            android:id="@+id/setting_share_title"
+            style="@style/menu_title"
+            android:layout_weight="1"/>
+        <TextView
+            style="@style/menu_text"/>
+    </LinearLayout>
+    <TextView
+        style="@style/setting_text_item"
+        android:text="请选择分享方式："
+        android:textSize="18sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/setting_share_weixin"
+            style="@style/menu_back"
+            android:padding="10dp"
+            android:src="@drawable/weixin" />
+        <ImageView
+            android:id="@+id/setting_share_weixin_friends"
+            style="@style/menu_back"
+            android:padding="10dp"
+            android:src="@drawable/weixin_friends" />
+        <ImageView
+            android:id="@+id/setting_share_qq"
+            style="@style/menu_back"
+            android:padding="10dp"
+            android:src="@drawable/qq"/>
+        <ImageView
+            android:id="@+id/setting_share_qq_space"
+            style="@style/menu_back"
+            android:padding="10dp"
+            android:src="@drawable/qq_space"/>
+        <ImageView
+            android:id="@+id/setting_share_note"
+            style="@style/menu_back"
+            android:padding="10dp"
+            android:src="@drawable/setting_email"/>
+    </LinearLayout>
+    <TextView
+        style="@style/setting_text_item"
+        android:text="分享内容（长按复制）：" />
+    <EditText
+        android:id="@+id/setting_share_text"
+        style="@style/setting_edit_item"
+        android:text="@string/share_info"
+        android:clickable="true"
+        android:editable="true"
+        android:focusable="true"/>
+</LinearLayout>

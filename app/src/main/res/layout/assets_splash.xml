@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:dividerPadding="0dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/splash_girl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:paddingBottom="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/splash_girl"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/splash_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/splash_bottom_bg"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="Magic神奇小秘书"/>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#104e83"
+            android:textSize="16sp"
+            android:text="协助您生意做的更轻松"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#104e83"
+                android:textSize="14sp"
+                android:text="\@资脉企业发展（上海）有限公司"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/assets_splash"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="210dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@drawable/avatar_girl_happy"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignEnd="@+id/textView2"-->
+        <!--android:layout_alignRight="@+id/textView2"-->
+        <!--android:layout_marginTop="70dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/assets_splash"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/assets_splash"-->
+        <!--android:textColor="@color/speakToit_bg" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/textView"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/assets_splash_1" />-->
+
+</LinearLayout>

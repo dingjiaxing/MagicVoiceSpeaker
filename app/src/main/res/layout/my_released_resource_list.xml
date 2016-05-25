@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <biz.home.api.myComponent.Topbar
+        android:id="@+id/resource_released_topbar"
+        app:title2="我发布的资源"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></biz.home.api.myComponent.Topbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/resource_released_topbar">
+        <ExpandableListView
+            android:id="@+id/my_release_resource_expandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ExpandableListView>
+    </LinearLayout>
+
+    </RelativeLayout>

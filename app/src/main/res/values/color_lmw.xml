@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="white_transparent_20">#20ffffff</color>
+    <color name="white_transparent_80">#80ffffff</color>
+    <color name="black_transparent_20">#20000000</color>
+    <color name="black_transparent_80">#80000000</color>
+    <color name="tools_bar_transparent">#9000</color>
+    <color name="black">#000000</color>
+    <color name="gray_black">#181818</color>
+    <color name="menu_not_press">#A6D2E2</color>
+    <color name="menu_press">#2892BC</color>
+    <color name="prepare_microphone_not_press">#2892BC</color>
+    <color name="prepare_microphone_press">#F16C27</color>
+    <color name="start_microphone_not_press">#F16C27</color>
+    <color name="start_microphone_press">#F16C27</color>
+    <color name="text_blue">#63B8FF</color>
+    <color name="text_base">#686868</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_green">#18d78d</color>
+</resources>

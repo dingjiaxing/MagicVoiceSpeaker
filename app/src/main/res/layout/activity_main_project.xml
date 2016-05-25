@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <TextView
+        android:id="@+id/project2_text_bgcolor"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/speakToit_bg"/>
+    <ProgressBar
+        android:id="@+id/project_progressBar"
+        android:layout_marginTop="400dp"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:background="#ffffff"
+        android:secondaryProgress="0"
+        />
+    <TextView
+        android:id="@+id/project2_speak_top_show1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:gravity="left"
+        android:text="项目标题："
+        android:textColor="@color/white" />
+    <TextView
+        android:id="@+id/project2_speak_top_show2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:gravity="left"
+        android:text="项目内容："
+        android:textColor="@color/white" />
+    <!--<TextView-->
+        <!--android:id="@+id/project2_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginTop="100dp"-->
+        <!--android:layout_marginLeft="80dp"-->
+        <!--android:gravity="left"-->
+        <!--android:text="此处为项目标题"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:autoLink="all"/>-->
+    <EditText
+        android:id="@+id/project2_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="80dp"
+        android:gravity="left"
+        android:text="此处为项目标题"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="80dp">
+        <TextView
+            android:id="@+id/project2_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="left"
+            android:text="此处为项目内容"
+            android:textColor="@color/white"
+            android:scrollbars="vertical"/>
+    </ScrollView>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/project2_user_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBaseline="@+id/bottom_menu_bg"
+        android:layout_below="@+id/project2_text_bgcolor"
+        android:fitsSystemWindows="true">
+
+        <Button
+            android:id="@+id/project2_confirm"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/button_detail"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/project2_change_content_button"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/project2_speak_center_show"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@color/button_next"
+            android:gravity="center"
+            android:text="更改内容"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/project2_speak_center_show"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/project2_confirm"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/speakToit_bg"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/project2_speak_bottom_show"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/project2_speak_center_show"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/speak_default_edit"
+            android:textColor="@color/text_color"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</RelativeLayout>

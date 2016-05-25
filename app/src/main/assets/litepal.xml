@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="MagicSpeaktoit" ></dbname>
+
+    <version value="3" ></version>
+
+    <!--<list>
+        <mapping class="com.airlove.prejecttest.app.Express" />
+    </list>-->
+    <list>
+    <mapping class="biz.home.model.UserInfo"></mapping>
+    </list>
+</litepal>

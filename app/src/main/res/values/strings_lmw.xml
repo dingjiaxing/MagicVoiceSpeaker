@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="input_view_hint">请输入你的请求...</string>
+    <string name="setting_view_menu">设置</string>
+    <string name="information_view_title">修改个人资料</string>
+    <string name="edit">编辑</string>
+    <string name="complete">完成</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="male">男士</string>
+    <string name="female">女士</string>
+    <string name="share_info">这个超级火！免费的秘书太方便了！以后生意上的事情都交给她吧！推荐你快点下载http://t.cn/XXXXXXX</string>
+    <!--SettingInformationView-->
+    <string name="settingInformation_tel">手机号</string>
+    <string name="settingInformation_name">真实姓名</string>
+    <string name="settingInformation_company">公司名称</string>
+    <string name="settingInformation_gender">性别</string>
+    <string name="settingInformation_tel_hint">只读，不能修改</string>
+
+    <!--SettingImageryView-->
+    <string name="settingImagery_backgroud">更换背景</string>
+    <string name="settingImagery_imagery">更换秘书形象</string>
+    <string name="settingImagery_voice">更换秘书嗓音</string>
+    <string name="settingImagery_put_later">即将推出</string>
+
+    <!--SettingCommunicateView-->
+    <string name="settingCommunicate_item1">会话模式</string>
+    <string name="settingCommunicate_item2">开启时就听话</string>
+    <string name="settingCommunicate_item3">神奇秘书语音说话</string>
+    <string name="settingCommunicate_item4">开启摇一摇</string>
+    <string name="settingCommunicate_item5">从状态上开启</string>
+    <string name="settingCommunicate_item6">漂浮小工具</string>
+
+    <!--SettingIntroduceView-->
+    <string name="settingIntroduceView_web">网站</string>
+    <string name="settingIntroduceView_email">发送邮箱</string>
+    <string name="settingIntroduceView_logs">发送日志</string>
+    <string name="settingIntroduceView_terms">条款及细则</string>
+
+    <!--设置界面列表内容-->
+    <string-array name="setting_items">
+        <item>修改个人资料</item>
+        <item>神奇秘书形象设定</item>
+        <item>神奇秘书沟通设定</item>
+        <item>推荐给好友</item>
+        <item>特别感谢</item>
+        <item>关于Magic神奇秘书</item>
+    </string-array>
+
+    <!--抽屉列表内容-->
+    <string-array name="drawer">
+        <item>查看日程</item>
+        <item>我想找机械方面的资源</item>
+        <item>我要订飞机票</item>
+        <item>我要订火车票</item>
+        <item>我要找商标专利方面的服务</item>
+        <item>我要找投资担保的供应商</item>
+        <item>我想找附近的川菜</item>
+        <item>上海火车站附近的湘菜</item>
+        <item>明天天气怎么样？</item>
+        <item>我要找资金</item>
+        <item>我想发资源</item>
+        <item>从上海大学到世纪公园怎么走</item>
+        <item>打开搜狐</item>
+        <item>一分钟以后提醒我和丁总开会</item>
+        <item>告诉我什么是红杉资本</item>
+        <item>董事会的英文怎么说</item>
+        <item>最近有什么重大新闻</item>
+        <item>这两天关于新加坡的新闻</item>
+        <item>帮我百度一下马云</item>
+        <item>给吴礼通发短信 本周末不休息</item>
+        <item>给包总打电话</item>
+        <item>给我讲个笑话吧</item>
+    </string-array>
+
+    <!--改变矢量图颜色时的RGB值-->
+    <string name="rgb_menu_not_press">#A6D2E2</string>
+    <string name="rgb_menu_press">#2892BC</string>
+    <string name="rgb_prepare_microphone_not_press">#2892BC</string>
+    <string name="rgb_prepare_microphone_press">#F16C27</string>
+    <string name="rgb_start_microphone_not_press">#FFFFFF</string>
+    <string name="rgb_start_microphone_press">#F16C27</string>
+
+</resources>

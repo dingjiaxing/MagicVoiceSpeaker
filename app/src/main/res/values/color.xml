@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="speakToit_bg">#1a8dc3</color>
+
+    <color name="speakToit_bg_dark">#2aa1d8</color>
+    <color name="bro_bar_bg">#602692b9</color>
+    <color name="white">#ffffff</color>
+    <color name="text_color">#a1d2d9</color>
+    <color name="set_color">#54000000</color>
+    <color name="button_next">#ffa264</color>
+    <color name="button_detail">#3bde9f</color>
+    <color name="button_detail2">#9a53ff55</color>
+    <color name="red">#ff0033</color>
+    <color name="grey_light">#c4c4c4</color>
+    <color name="grey_heavy">#999999</color>
+    <color name="exit_scene_color">#264372</color>
+</resources>

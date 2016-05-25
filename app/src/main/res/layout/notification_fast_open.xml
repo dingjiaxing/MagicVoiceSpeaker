@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/icon_t"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/app_icon_big" />
+
+    <LinearLayout
+        android:id="@+id/click_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="30dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_login"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:text="登录" />-->
+        <ImageView
+            android:id="@+id/notificationVoiceImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/microphone_img"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="5dip"
+        android:layout_toLeftOf="@id/click_button"
+        android:layout_toRightOf="@id/icon_t"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Magic神奇小秘书"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="点击打开神奇小秘书"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

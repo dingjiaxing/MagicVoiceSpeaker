@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--android:fillViewport="true">-->
+    <!--android:fillViewport="true">-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:layout_marginTop="320dp"-->
+    <!--android:background="@color/speakToit_bg">-->
+    <!--</LinearLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/message_edit_layout"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/message_to"
+            android:text=" 发送短信给: "
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="120dp"
+            android:layout_alignParentBottom="true"
+            android:clickable="false"
+            android:gravity="left"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/message_name"
+            android:text="张三"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:layout_marginBottom="100dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+        <!--<ScrollView-->
+        <!--android:id="@+id/scrollView_message_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginTop="340dp"-->
+        <!--android:layout_marginLeft="65dp"-->
+        <!--android:scrollbarStyle="outsideOverlay"></ScrollView>-->
+        <EditText
+            android:id="@+id/message_content"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="明天去你们家吃饭"
+            android:hint="点击以编辑"
+            android:textColorHint="#bbbbbb"
+            android:textColor="@color/white"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="65dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            />
+
+        <TextView
+            android:text=" 短信内容: "
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="70dp"
+            android:layout_alignParentBottom="true"
+            android:clickable="false"
+            android:gravity="left"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/message_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        android:gravity="center_horizontal"
+        android:fitsSystemWindows="true">
+        <!--android:layout_alignBaseline="@+id/bottom_menu_bg"-->
+
+        <Button
+            android:id="@+id/message_send"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/message_button_send"
+            android:gravity="center_vertical|left"
+            android:drawableLeft="@drawable/message_button_icon_send"
+            android:text="发送"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/message_cancel"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/message_send"
+            android:background="@drawable/message_button_cancel"
+            android:layout_marginLeft="20dp"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/message_button_icon_cancel"
+            android:text="取消"
+            android:textColor="@color/white" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/message_response"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="46dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="11111"-->
+        <!--android:textColor="@color/speakToit_bg"-->
+        <!--android:textSize="22dp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/message_bottom_show"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_below="@+id/message_response"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="0000"-->
+        <!--android:textColor="@color/speakToit_bg"-->
+        <!--android:textSize="20dp" />-->
+    </LinearLayout>
+</RelativeLayout>
+

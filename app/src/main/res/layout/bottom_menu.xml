@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by lmw on 2015/7/16-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_gravity="bottom">
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/menu_bottom_voice"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="-40dp"
+            android:background="@drawable/voice_shape"
+            android:padding="30dp"
+            android:clickable="false"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/layout_bottom"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/menu_bottom_keyboard"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:padding="15dp"
+            android:clickable="true"/>
+        <ImageView
+            android:id="@+id/menu_bottom_microphone"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:clickable="true"
+            android:contentDescription="0"/>
+        <ImageView
+            android:id="@+id/menu_bottom_menu"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:clickable="true"/>
+    </RelativeLayout>
+</RelativeLayout>
